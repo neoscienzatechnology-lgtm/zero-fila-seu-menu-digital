@@ -1,12 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/HeroSection";
+import { ProblemSolutionSection } from "@/components/ProblemSolutionSection";
+import { HowItWorksSection } from "@/components/HowItWorksSection";
+import { BenefitsMerchantSection } from "@/components/BenefitsMerchantSection";
+import { BenefitsClientSection } from "@/components/BenefitsClientSection";
+import { DifferentialsSection } from "@/components/DifferentialsSection";
+import { PricingSection } from "@/components/PricingSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { CTASection } from "@/components/CTASection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <HeroSection />
+        <ProblemSolutionSection />
+        <HowItWorksSection />
+        <BenefitsMerchantSection />
+        <BenefitsClientSection />
+        <DifferentialsSection />
+        <PricingSection />
+        <TestimonialsSection />
+        <CTASection />
+      </main>
+      <Footer />
     </div>
   );
 };
