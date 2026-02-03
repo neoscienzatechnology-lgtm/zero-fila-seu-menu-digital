@@ -43,7 +43,10 @@ export const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex items-center gap-2">
+          <Button variant="outline" size="sm" asChild>
+            <a href="/admin">Painel Admin</a>
+          </Button>
           <Button variant="cta" size="default">
             Começar Agora
           </Button>
@@ -79,7 +82,10 @@ export const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <div className="pt-4 px-4">
+              <div className="pt-4 px-4 space-y-2">
+                <Button variant="outline" size="lg" className="w-full" asChild>
+                  <a href="/admin">Painel Admin</a>
+                </Button>
                 <Button variant="cta" size="lg" className="w-full">
                   Começar Agora
                 </Button>
